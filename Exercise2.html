@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <title>Jati Simple Calculator Demo</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        .display{
+            
+            border-radius: 5px;
+            height: 80px;
+            font-size: 3rem;
+            text-align: right;
+        }
+        .bordernya{
+            border:1px solid black;
+            color:black;
+        }
+        table{
+            width:100%;
+        }
+        table tr td{
+            margin:0px;
+            padding:0px;
+            background-color: #6c757d;
+        }
+        td button {
+            width: 100%;
+            border-radius: 0px;
+            
+        }
+        .btn{
+            border-radius: 0px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            &nbsp;
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                &nbsp;
+            </div>
+            <div class="col">
+                <div class="row">
+
+                    <div id="displaynya" class="col display bordernya">
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <table>
+                        <tr>
+                            <td><button type="button" class="btn btn-secondary" onclick="setoperator('+')">+</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="setoperator('-')">-</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="setoperator('*')">&times;</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="setoperator('/')">&divide;</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('7')">7</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('8')">8</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('9')">9</button></td>
+                            <td rowspan="4"><button type="button" class="btn btn-secondary" style="height: 100%;" onclick="sumkan()">=</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('4')">4</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('5')">5</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('6')">6</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('3')">3</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('2')">2</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('1')">1</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('0')">0</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="setbil('.')">.</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="clearkan()">AC</button></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="col">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jscalc.js"></script>
+</body>
+
+</html>
